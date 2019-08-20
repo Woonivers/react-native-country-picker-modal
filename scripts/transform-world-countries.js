@@ -25,16 +25,13 @@ const newcountries = countries
       name: { common, ...getCountryNames(common, translations) }
     }
   }))
-  .sort((a, b) => {
-    if (a[Object.keys(a)[0]].name.common === b[Object.keys(b)[0]].name.common) {
-      return 0;
-    } else if (
-      a[Object.keys(a)[0]].name.common < b[Object.keys(b)[0]].name.common
-    ) {
-      return -1;
-    }
-    return 1;
-  })
+  .concat(
+    extraCountries.map(country => {
+      const { cca2, flagImage, ...countryRest } = country;
+      return isEmoji ? { [cca2]: countryRest } : { [cca2]: { ...countryRest, flag: flagImage } };
+    })
+  )
+  .sort((a, b) => a[Object.keys(a)[0]].name.common > b[Object.keys(b)[0]].name.common)
   .reduce(
     (prev, cur) => ({
       ...prev,
