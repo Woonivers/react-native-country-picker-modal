@@ -3152,6 +3152,33 @@
       "kor": "이탈리아"
     }
   },
+  "72": {
+    "currency": "EUR",
+    "callingCode": "39",
+    "flag": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeBAMAAACs80HuAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABVQTFRFAFcAAVgBpcOl/////qSk/AEB/AAA2/OHLwAAAAFiS0dEAxEMTPIAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAaSURBVCjPY2AAAyFjMHBNAwOGUcFRQVoKAgDqd3XHPs6NlAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0xMC0wN1QxMzoxNDo0MyswMjowMCyUH1IAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMTAtMDdUMTM6MTQ6NDMrMDI6MDBdyafuAAAAAElFTkSuQmCC",
+    "name": {
+      "common": "Italy - CAMPIONE D´ITALIA",
+      "deu": "Italien",
+      "fra": "Italie",
+      "hrv": "Italija",
+      "ita": "Italia",
+      "jpn": "イタリア",
+      "nld": "Italië",
+      "por": "Itália",
+      "rus": "Италия",
+      "spa": "Italia - CAMPIONE D´ITALIA",
+      "svk": "Taliansko",
+      "fin": "Italia",
+      "zho": "意大利",
+      "isr": "איטליה",
+      "ces": "Itálie",
+      "slk": "Taliansko",
+      "est": "Itaalia",
+      "pol": "Włochy",
+      "urd": "اطالیہ",
+      "kor": "이탈리아"
+    }
+  },
   "JM": {
     "currency": "JMD",
     "callingCode": "1876",
