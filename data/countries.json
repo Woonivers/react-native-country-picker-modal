@@ -4662,6 +4662,33 @@
       "kor": "네덜란드"
     }
   },
+  "BQ": {
+    "currency": "EUR",
+    "callingCode": "31",
+    "flag": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeBAMAAACs80HuAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAACdQTFRFrhworh0prBcjtjI9/PX2//////7+/v7/9ff6NliWHEKIIkeMIUaL9LL7PgAAAAFiS0dEBfhv6ccAAAAJcEhZcwAAAEgAAABIAEbJaz4AAABASURBVCjPY2AYfEAQC2BQwgIYjLEABhcsgCEUC2BIwwKwq6RQsBwLwK6yAwtgmIkFMKzCAhh2YwEMZ7CAgRUEACAv6G1C11PvAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTEwLTA3VDEzOjE1OjIxKzAyOjAwkqZswgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0xMC0wN1QxMzoxNToyMSswMjowMOP71H4AAAAASUVORK5CYII=",
+    "name": {
+      "common": "Netherlands - Bonaire, Sint Eustatius and Saba",
+      "deu": "Niederlande",
+      "fra": "Pays-Bas",
+      "hrv": "Nizozemska",
+      "ita": "Paesi Bassi",
+      "jpn": "オランダ",
+      "nld": "Nederland",
+      "por": "Holanda",
+      "rus": "Нидерланды",
+      "spa": "Países Bajos - Bonaire, San Eustaquio y Saba",
+      "svk": "Holansko",
+      "fin": "Alankomaat",
+      "zho": "荷兰",
+      "isr": "הולנד",
+      "ces": "Nizozemsko",
+      "slk": "Holansko",
+      "est": "Holland",
+      "pol": "Holandia",
+      "urd": "نیدرلینڈز",
+      "kor": "네덜란드"
+    }
+  },
   "NO": {
     "currency": "NOK",
     "callingCode": "47",
