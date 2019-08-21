@@ -53,7 +53,7 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingLeft: 5,
-    paddingRight: 45
+    paddingRight: 50
   },
   itemCountryFlag: {
     justifyContent: 'center',
