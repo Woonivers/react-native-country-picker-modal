@@ -21,6 +21,7 @@ import {
 import Fuse from 'fuse.js';
 
 import cca2List from '../data/cca2.json';
+import extraCountries from '../src/extra-countries';
 import { getHeightPercent } from './ratio';
 import CloseButton from './CloseButton';
 import countryPickerStyles from './CountryPicker.style';
@@ -54,6 +55,7 @@ const setCountries = flagType => {
 setCountries();
 
 export const getAllCountries = () => cca2List.map(cca2 => ({ ...countries[cca2], cca2 }));
+export const extraCountriesList = extraCountries.map(({ cca2 }) => cca2);
 
 export default class CountryPicker extends Component {
   static propTypes = {
@@ -380,8 +382,12 @@ export default class CountryPicker extends Component {
       />
     );
   };
-
   render() {
+    const { showCallingCode } = this.props;
+    // Exclude the extra countries if we show the callingCode
+    const countriesData = showCallingCode
+      ? this.state.flatListMap.filter(({ key }) => !extraCountriesList.includes(key))
+      : this.state.flatListMap;
     return (
       <View style={styles.container}>
         <TouchableOpacity
@@ -434,7 +440,7 @@ export default class CountryPicker extends Component {
                 <FlatList
                   testID="list-countries"
                   keyboardShouldPersistTaps="handled"
-                  data={this.state.flatListMap}
+                  data={countriesData}
                   ref={flatList => (this._flatList = flatList)}
                   initialNumToRender={30}
                   onScrollToIndexFailed={() => {}}
