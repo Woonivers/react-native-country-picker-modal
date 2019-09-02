@@ -17,8 +17,9 @@ const getCountryNames = (common, translations) =>
     );
 
 const newcountries = countries
-  .map(({ cca2, currency, callingCode, name: { common }, translations }) => ({
+  .map(({ cca2, cca3, currency, callingCode, name: { common }, translations }) => ({
     [cca2]: {
+      cca3,
       currency: currency[0],
       callingCode: callingCode[0],
       flag: isEmoji ? `flag-${cca2.toLowerCase()}` : flags[cca2],
