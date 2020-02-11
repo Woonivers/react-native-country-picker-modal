@@ -27,8 +27,8 @@ module.exports = [
       est: 'Saksamaa - Helgoland',
       pol: 'Niemcy - Helgoland',
       urd: 'جرمنی - Helgoland',
-      kor: '독일 - Helgoland'
-    }
+      kor: '독일 - Helgoland',
+    },
   },
   {
     cca2: '30',
@@ -58,8 +58,8 @@ module.exports = [
       est: 'Saksamaa - Büsingen am Hochrhein',
       pol: 'Niemcy - Büsingen am Hochrhein',
       urd: 'جرمنی - Büsingen am Hochrhein',
-      kor: '독일 - Büsingen am Hochrhein'
-    }
+      kor: '독일 - Büsingen am Hochrhein',
+    },
   },
   {
     cca2: 'XB',
@@ -89,8 +89,8 @@ module.exports = [
       est: 'Hispaania - Canary Islands',
       pol: 'Hiszpania - Canary Islands',
       urd: 'ہسپانیہ - Canary Islands',
-      kor: '스페인 - Canary Islands'
-    }
+      kor: '스페인 - Canary Islands',
+    },
   },
   {
     cca2: 'XC',
@@ -120,8 +120,8 @@ module.exports = [
       est: 'Hispaania - Ceuta',
       pol: 'Hiszpania - Ceuta',
       urd: 'ہسپانیہ - Ceuta',
-      kor: '스페인 - Ceuta'
-    }
+      kor: '스페인 - Ceuta',
+    },
   },
   {
     cca2: 'XL',
@@ -151,8 +151,8 @@ module.exports = [
       est: 'Hispaania - Melilla',
       pol: 'Hiszpania - Melilla',
       urd: 'ہسپانیہ - Melilla',
-      kor: '스페인 - Melilla'
-    }
+      kor: '스페인 - Melilla',
+    },
   },
   {
     cca2: '20',
@@ -182,8 +182,8 @@ module.exports = [
       est: 'Suurbritannia - Channel Islands',
       pol: 'Zjednoczone Krłlestwo - Channel Islands',
       urd: 'مملکتِ متحدہ - Channel Islands',
-      kor: '영국 - Channel Islands'
-    }
+      kor: '영국 - Channel Islands',
+    },
   },
   {
     cca2: 'SHN',
@@ -213,8 +213,8 @@ module.exports = [
       est: 'Suurbritannia - Saint Helena',
       pol: 'Zjednoczone Krłlestwo - Saint Helena',
       urd: 'مملکتِ متحدہ - Saint Helena',
-      kor: '영국 - Saint Helena'
-    }
+      kor: '영국 - Saint Helena',
+    },
   },
   {
     cca2: '60',
@@ -244,8 +244,8 @@ module.exports = [
       est: 'Kreeka - Mount Athos',
       pol: 'Grecja - Mount Athos',
       urd: 'یونان - Mount Athos',
-      kor: '그리스 - Mount Athos'
-    }
+      kor: '그리스 - Mount Athos',
+    },
   },
   {
     cca2: '72',
@@ -275,8 +275,8 @@ module.exports = [
       est: 'Itaalia - Campione d´Italia',
       pol: 'Włochy - Campione d´Italia',
       urd: 'اطالیہ - Campione d´Italia',
-      kor: '이탈리아 - Campione d´Italia'
-    }
+      kor: '이탈리아 - Campione d´Italia',
+    },
   },
   {
     cca2: '71',
@@ -306,8 +306,8 @@ module.exports = [
       est: 'Itaalia - Lake Lugano',
       pol: 'Włochy - Lake Lugano',
       urd: 'اطالیہ - Lake Lugano',
-      kor: '이탈리아 - Lake Lugano'
-    }
+      kor: '이탈리아 - Lake Lugano',
+    },
   },
   {
     cca2: '70',
@@ -337,8 +337,8 @@ module.exports = [
       est: 'Itaalia - Livigno',
       pol: 'Włochy - Livigno',
       urd: 'اطالیہ - Livigno',
-      kor: '이탈리아 - Livigno'
-    }
+      kor: '이탈리아 - Livigno',
+    },
   },
   {
     cca2: 'BQ',
@@ -368,7 +368,7 @@ module.exports = [
       est: 'Holland - Bonaire, Sint Eustatius and Saba',
       pol: 'Holandia - Bonaire, Sint Eustatius and Saba',
       urd: 'نیدرلینڈز - Bonaire, Sint Eustatius and Saba',
-      kor: '네덜란드 - Bonaire, Sint Eustatius and Saba'
-    }
-  }
-];
+      kor: '네덜란드 - Bonaire, Sint Eustatius and Saba',
+    },
+  },
+]
