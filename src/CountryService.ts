@@ -127,12 +127,28 @@ export const getCountriesAsync = async (
   subregion?: Subregion,
   countryCodes?: CountryCode[],
   excludeCountries?: CountryCode[],
+  extraCountryCodeList = [
+    '31',
+    '30',
+    'XB',
+    'XC',
+    'XL',
+    '20',
+    'SHN',
+    '60',
+    '72',
+    '71',
+    '70',
+    'BQ',
+  ] as CountryCode[],
 ): Promise<Country[]> => {
   const countriesRaw = await loadDataAsync(flagType)
   if (!countriesRaw) {
     return []
   }
-  const countries = CountryCodeList.filter(isCountryPresent(countriesRaw))
+  const countries = extraCountryCodeList
+    .concat(CountryCodeList)
+    .filter(isCountryPresent(countriesRaw))
     .map((cca2: CountryCode) => ({
       cca2,
       ...{
