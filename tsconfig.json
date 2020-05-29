@@ -29,7 +29,7 @@
     "noFallthroughCasesInSwitch": true,
     "strictPropertyInitialization": false,
     "lib": ["dom", "esnext"],
-    "typeRoots": ["./node_modules/@types", "./@types"]
+    "typeRoots": ["./@types"]
   },
   "exclude": ["node_modules"]
 }
