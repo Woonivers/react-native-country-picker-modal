@@ -221,6 +221,8 @@ export const CountryList = (props: CountryListProps) => {
   }, [filterFocus])
 
   const initialNumToRender = Math.round(height / (itemHeight || 1))
+  const filteredData = search(filter, data)
+  // console.log('---> filteredData', filteredData.length)
   return (
     <View style={[styles.container, { backgroundColor }]}>
       <FlatList
@@ -243,7 +245,7 @@ export const CountryList = (props: CountryListProps) => {
           onSelect,
         })}
         {...{
-          data: search(filter, data),
+          data: filteredData,
           keyExtractor,
           onScrollToIndexFailed,
           ItemSeparatorComponent,

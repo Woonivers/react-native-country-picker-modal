@@ -116,7 +116,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
     filterFocus: false,
   })
   const { translation, getCountriesAsync } = useContext()
-  const { visible, filter, countries, filterFocus } = state
+  const { visible, filter, filterFocus } = state
 
   useEffect(() => {
     if (state.visible !== props.visible) {
@@ -170,7 +170,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
       .then(setCountries)
       .catch(console.warn)
   }, [translation, withEmoji])
-
+  // console.log('state.countries', state.countries.length)
   return (
     <>
       {withModal && renderFlagButton(flagProp)}
@@ -203,7 +203,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
         <CountryList
           {...{
             onSelect: onSelectClose,
-            data: countries,
+            data: state.countries,
             letters: [],
             withAlphaFilter: withAlphaFilter && filter === '',
             withCallingCode,

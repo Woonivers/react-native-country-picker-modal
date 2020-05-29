@@ -4,7 +4,6 @@ import {
   TranslationLanguageCode,
   TranslationLanguageCodeMap,
   FlagType,
-  CountryCodeList,
   Region,
   Subregion,
 } from './types'
@@ -100,9 +99,9 @@ export const getCountryCurrencyAsync = async (countryCode: CountryCode) => {
   return countries[countryCode].currency[0]
 }
 
-const isCountryPresent = (countries: { [key in CountryCode]: Country }) => (
-  countryCode: CountryCode,
-) => !!countries[countryCode]
+// const isCountryPresent = (countries: { [key in CountryCode]: Country }) => (
+//   countryCode: CountryCode,
+// ) => !!countries[countryCode]
 
 const isRegion = (region?: Region) => (country: Country) =>
   region ? country.region === region : true
@@ -127,37 +126,25 @@ export const getCountriesAsync = async (
   subregion?: Subregion,
   countryCodes?: CountryCode[],
   excludeCountries?: CountryCode[],
-  extraCountryCodeList = [
-    '31',
-    '30',
-    'XB',
-    'XC',
-    'XL',
-    '20',
-    'SHN',
-    '60',
-    '72',
-    '71',
-    '70',
-    'BQ',
-  ] as CountryCode[],
 ): Promise<Country[]> => {
   const countriesRaw = await loadDataAsync(flagType)
   if (!countriesRaw) {
     return []
   }
-  const countries = extraCountryCodeList
-    .concat(CountryCodeList)
-    .filter(isCountryPresent(countriesRaw))
-    .map((cca2: CountryCode) => ({
+  // const countries = CountryCodeList
+  // const countries = extraCountryCodeList
+  // .concat(CountryCodeList)
+  // .filter(isCountryPresent(countriesRaw))
+  const countries = Object.keys(countriesRaw)
+    .map(cca2 => ({
       cca2,
       ...{
-        ...countriesRaw[cca2],
+        ...countriesRaw[cca2 as CountryCode],
         name:
-          (countriesRaw[cca2].name as TranslationLanguageCodeMap)[
-            translation
-          ] ||
-          (countriesRaw[cca2].name as TranslationLanguageCodeMap)['common'],
+          (countriesRaw[cca2 as CountryCode]
+            .name as TranslationLanguageCodeMap)[translation] ||
+          (countriesRaw[cca2 as CountryCode]
+            .name as TranslationLanguageCodeMap)['common'],
       },
     }))
     .filter(isRegion(region))
